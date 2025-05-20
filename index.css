@@ -1,0 +1,300 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 0;
+}
+
+/* Container for consistent layout */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 60px 0;
+    text-align: center;
+    animation: slideDown 1s ease-in-out;
+}
+
+header .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .profile img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2em;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.social-links {
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6f61;
+    transform: translateY(-5px);
+}
+
+/* Navigation Menu */
+#navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #ff6f61;
+    transform: translateY(-3px);
+}
+
+/* About Section */
+.about {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Skills Section */
+.skills {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skills li:hover {
+    transform: translateX(10px);
+}
+
+.skills li i {
+    margin-right: 10px;
+    color: #ff6f61;
+}
+
+/* Achievements Section */
+.achievements {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.achievements h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.achievements p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Projects Section */
+.projects {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects .project {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.projects .project:hover {
+    transform: translateX(10px);
+}
+
+.projects h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    font-size: 1.2em;
+}
+
+/* Hobbies Section */
+.hobbies {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hobbies h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.hobby-item {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+.hobby-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hobby-item p {
+    font-size: 1em;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
